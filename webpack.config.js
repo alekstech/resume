@@ -22,8 +22,7 @@ module.exports = {
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '/'
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -35,7 +34,11 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.svg$/,
+        loader: 'svg-inline-loader'
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
         use: [
           'file-loader'
         ]

@@ -1,10 +1,2 @@
-@font-face {
-  font-family: 'Bangers';
-  src:  url('./Bangers.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-}
-body {
-  font-family: "Bangers";
-  background: url('./anthony-delanoix-PxrRwO4CwAI-unsplash.jpg');
-}
+@import './main.css';
+@import './reveal.css';
